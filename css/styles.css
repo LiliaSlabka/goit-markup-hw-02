@@ -1,3 +1,68 @@
+:root {
+  /* Цвет текста */
+  --basic-txt-color: #212121;
+  --accent-txt-color: #2196f3;
+  --white-txt-color: #ffffff;
+  --paragraph-txt-color: #757575;;
+
+  /* Шрифты */
+  --main-font: 'Roboto';
+  --secondary-font: 'Raleway';
+}
+
+body {
+  font-family: 'Roboto', 'Raleway', sans-serif;
+}
+
+/* Логотип */
+
+.logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
 .accent {
-color: #2196F3;
+  color: var(--accent-txt-color);
+}
+
+/* Подчеркивание ссылок и маркеры */
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/* Шапка  */
+
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--basic-txt-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-txt-color);
+}
+
+.group-contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+ color: var(--paragraph-txt-color)
+}
+
+.group-contact:hover,
+.group-contact:focus {
+color: var(--accent-txt-color)
 }
