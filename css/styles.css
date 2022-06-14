@@ -4,14 +4,12 @@
   --accent-txt-color: #2196f3;
   --white-txt-color: #ffffff;
   --paragraph-txt-color: #757575;
+  --button-txt-color: #188ce8;
+  --logo-color: #000000;
 
   /* Цвет фона */
   --bg-color: #2f303a;
   --secondary-bg-color: #f5f4fa;
-
-  /* Шрифты */
-  --main-font: 'Roboto';
-  --secondary-font: 'Raleway';
 }
 
 body {
@@ -26,7 +24,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: var(--logo-color);
 }
 
 .accent {
@@ -55,6 +53,10 @@ body {
 
 .nav-link:hover,
 .nav-link:focus {
+  color: var(--accent-txt-color);
+}
+
+.current {
   color: var(--accent-txt-color);
 }
 
@@ -99,6 +101,12 @@ body {
   letter-spacing: 0.06em;
   color: var(--white-txt-color);
   background-color: var(--accent-txt-color);
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--button-txt-color);
 }
 
 /* Особнности  */
@@ -174,4 +182,38 @@ body {
 .address:hover,
 .address:focus {
   color: var(--accent-txt-color);
+}
+
+/* Портфолио */
+
+.button-list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  cursor: pointer;
+}
+
+.button-list:hover,
+.button-list:focus {
+  background-color: var(--accent-txt-color);
+  color: var(--white-txt-color);
+}
+
+.project-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--basic-txt-color);
+}
+
+.project-type {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--paragraph-txt-color);
 }
