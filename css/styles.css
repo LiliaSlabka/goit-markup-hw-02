@@ -2,7 +2,7 @@
   /* Цвет текста */
   --basic-txt-color: #212121;
   --accent-txt-color: #2196f3;
-  --white-txt-color: #ffffff;
+  --secondary-txt-color: #ffffff;
   --paragraph-txt-color: #757575;
   --button-txt-color: #188ce8;
   --logo-color: #000000;
@@ -14,12 +14,13 @@
 
 body {
   font-family: 'Roboto', 'Raleway', sans-serif;
+  font-size: 14px;
 }
 
 /* Логотип */
 
 .logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -88,7 +89,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--white-txt-color);
+  color: var(--secondary-txt-color);
 }
 
 .button {
@@ -99,14 +100,14 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--white-txt-color);
+  color: var(--secondary-txt-color);
   background-color: var(--accent-txt-color);
   cursor: pointer;
 }
 
 .button:hover,
 .button:focus {
-  color: var(--button-txt-color);
+  background-color: var(--button-txt-color);
 }
 
 /* Особнности  */
@@ -168,14 +169,14 @@ body {
 }
 
 .accent-white {
-  color: var(--white-txt-color);
+  color: var(--secondary-txt-color);
 }
 
 .address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--white-txt-color);
+  color: var(--secondary-txt-color);
   font-style: normal;
 }
 
@@ -194,12 +195,18 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
   cursor: pointer;
+  font-family: inherit;
 }
 
 .button-list:hover,
 .button-list:focus {
   background-color: var(--accent-txt-color);
-  color: var(--white-txt-color);
+  color: var(--secondary-txt-color);
+}
+
+.current-button {
+  color: var(--secondary-txt-color);
+  background-color: var(--accent-txt-color);
 }
 
 .project-name {
